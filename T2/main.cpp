@@ -1,6 +1,8 @@
 #include <iostream>
 
 int main(){
-    auto result = (10 <=> 20) > 0;
-    std::cout << result << std::endl;
+    std::cout << "A is alphanumeric : " << std::isalnum('A') << std::endl;
+    std::cout << "^ is alphanumeric : " << std::isalnum('^') << std::endl;
+
+    return 0;
 }
