@@ -17,11 +17,16 @@ int main(){
         std::cout << "Hey, Drew!" << std::endl;
     }();*/
 
+    // PASS IN PREDEFINED ARGUMENTS
     double x {2.7}, y {3.9};
 
-    [](double a, double b){
-        std::cout << a + b << std::endl;
-    }(x, y);
+    // INITIALIZE VARIABLES FUNCTIONALLY
+    auto z = [x, y](){
+        //std::cout << x + y << std::endl;
+        return x + y;
+    }();
+
+    std::cout << z << std:: endl;
     
     return 0;
 }
