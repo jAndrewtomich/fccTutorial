@@ -27,6 +27,10 @@ int main(){
     }();
 
     std::cout << z << std:: endl;
+
+    [&](){
+        std::cout << z + 1 << std::endl;
+    }();
     
     return 0;
 }
