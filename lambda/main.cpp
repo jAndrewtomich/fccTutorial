@@ -21,7 +21,7 @@ int main(){
     double x {2.7}, y {3.9};
 
     // INITIALIZE VARIABLES FUNCTIONALLY
-    auto z = [x, y](){
+    auto z = [&](){
         //std::cout << x + y << std::endl;
         return x + y;
     }();
