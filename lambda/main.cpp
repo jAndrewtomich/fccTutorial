@@ -31,6 +31,12 @@ int main(){
     [&](){
         std::cout << z + 1 << std::endl;
     }();
+
+    std::cout << z << '\n';
+
+    [=](){
+
+    }
     
     return 0;
 }
