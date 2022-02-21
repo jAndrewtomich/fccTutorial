@@ -5,7 +5,7 @@ int main(){
 
     char a{'a'};
 
-    std::cout << x + y << '\n';
+    std::cout << x + y << '\n' << a << '\n';
 
     return 0;
 }
