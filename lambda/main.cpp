@@ -28,15 +28,16 @@ int main(){
 
     std::cout << z << std:: endl;
 
-    [&](){
+    auto q = [&](){
         std::cout << z + 1 << std::endl;
+        return z + 1;
     }();
 
     std::cout << z << '\n';
 
     [=](){
-
-    }
+        std::cout << q << '\n';
+    }();
     
     return 0;
 }
